@@ -61,7 +61,32 @@ nav {
     padding: .25rem;
     padding-right: 1.5rem;
 }
+.menu-bar{
+    display: none;
+}
 
 nav p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+}
+
+
+/* responsive for mobile devices */
+@media screen and (max-width:576px) {
+    .nav-options{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+        height: 24px;
+        width: 24px;
+    }
+}
+
+
+/* responsive for tablet devices */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav-options{
+        gap: 1rem;
+    }
+    
 }
