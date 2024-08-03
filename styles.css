@@ -13,8 +13,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
     max-width: 1440px;
@@ -52,6 +52,21 @@ footer {
 
 header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: .8rem;
+}
+.section-description{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /* nav-bar related styles */
@@ -126,6 +141,7 @@ span {
 .upper-card {
     top: 25%;
     left: 60%;
+    width: 12rem;
 }
 
 .lower-card{
@@ -140,7 +156,7 @@ span {
 .lower-card,
 .upper-card {
     position: absolute;
-    width: 11rem;
+
     padding: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -162,5 +178,33 @@ span {
     background-color: rgb(230, 83, 60);
     width: 2.5rem;
     height: 2.5rem;
+    border-radius: 50%;
+}
+
+
+/* habits section related styles */
+.habits-container{
+    text-align: center;
+}
+.habit-card-container{
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5rem;
+}
+
+.card-container{
+    text-align: center;
+}
+.card-container>p {
+   padding: 2px 5px;
+}
+.card-container .img-container{
+    border-radius: 50%;
+    margin: 0 .9rem 1.8rem .9rem;
+    display: flex;
+    border: 5px solid rgba(255, 255, 255, 0.205);
+}
+.card-container .img-container img{
     border-radius: 50%;
 }

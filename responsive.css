@@ -50,18 +50,25 @@
         left: -30%;
     }
 
-    .upper-card {
-        top: 10%;
-    }
+    
 
     .lower-card,
     .upper-card{
-        width: 100px;
+        /* width: 100px; */
         padding: .4rem;
+    }
+
+    .upper-card {
+        top: 10%;
+        width: 7.5rem;
     }
     .red-circle{
         width: 1.5rem;
         height: 1.5rem;
+    }
+
+    .habit-card-container{
+        grid-template-columns: repeat(1,1fr);
     }
 }
 
@@ -81,6 +88,9 @@
 
     img {
         width: 100%;
+    }
+    .habit-card-container{
+        grid-template-columns: repeat(2,1fr);
     }
 
 }
