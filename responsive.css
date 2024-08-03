@@ -1,0 +1,44 @@
+
+/* responsive for mobile devices */
+@media screen and (max-width:576px) {
+    .nav-options {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        height: 24px;
+        width: 24px;
+    }
+
+    .hero-container{
+        display: block;
+        width: 100%;
+    }
+
+    .hero-container h1 {
+        font-size: 2.5rem;
+        line-height: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+
+/* responsive for tablet devices */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .nav-options {
+        gap: 1rem;
+    }
+
+    .hero-container{
+        display: block;
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+}
