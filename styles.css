@@ -50,6 +50,10 @@ footer {
     border: 1px solid white;
 }
 
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+}
+
 /* nav-bar related styles */
 nav {
     display: flex;
@@ -89,8 +93,6 @@ nav p {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
-
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
 .hero-text-container {
