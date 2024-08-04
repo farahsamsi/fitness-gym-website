@@ -51,7 +51,7 @@ footer {
 }
 
 header {
-    background: linear-gradient(0.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
 img {
@@ -65,7 +65,7 @@ img {
     margin-bottom: .8rem;
 }
 
-.section-description {
+.section-description, .team-item-text>p {
     font-size: .8rem;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -285,28 +285,28 @@ span {
     grid-column: 10/span 3;
     grid-row: 1/span 6;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./images/exercise3.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/exercise3.png);
 }
 
 .child-4 {
     grid-column: 1/span 5;
     grid-row: 7/span 6;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(./images/exercise4.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/exercise4.png);
 }
 
 .child-5 {
     grid-column: 6/span 3;
     grid-row: 7/span 6;
 
-    background-image: linear-gradient(rgba(66, 255, 0, 0.3),rgba(66, 255, 0, 0.3)), url(./images/exercise5.jpg);
+    background-image: linear-gradient(rgba(66, 255, 0, 0.3), rgba(66, 255, 0, 0.3)), url(./images/exercise5.jpg);
 }
 
 .child-6 {
     grid-column: 9/span 4;
     grid-row: 7/span 6;
 
-    background-image: linear-gradient(rgba(0, 71, 255, 0.3),rgba(0, 71, 255, 0.3)), url(./images/exercise6.jpg);
+    background-image: linear-gradient(rgba(0, 71, 255, 0.3), rgba(0, 71, 255, 0.3)), url(./images/exercise6.jpg);
 }
 
 .child-1,
@@ -324,25 +324,59 @@ span {
     position: relative;
 }
 
-.floating-text{
+.floating-text {
     color: white;
     font-size: .7rem;
     font-weight: 500;
 }
 
-.child-1 .floating-text, .child-3 .floating-text, .child-5 .floating-text,
-.child-6 .floating-text{
+.child-1 .floating-text,
+.child-3 .floating-text,
+.child-5 .floating-text,
+.child-6 .floating-text {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
 }
-.child-2 .floating-text{
+
+.child-2 .floating-text {
     position: absolute;
     top: 1rem;
     left: 1rem;
 }
-.child-4 .floating-text{
+
+.child-4 .floating-text {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+
+/* team related styles */
+.team-container {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.team-imgs-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.2rem;
+    margin-top: 4.5rem;
+}
+.team-item img{
+    height: 100%;
+    border-radius: 18px;
+    filter: brightness(70%);
+}
+
+.team-item {
+    position: relative;
+}
+
+.team-item-text {
+    text-align: left;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
 }
