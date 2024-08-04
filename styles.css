@@ -51,7 +51,7 @@ footer {
 }
 
 header {
-    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(0.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
 img {
@@ -246,3 +246,14 @@ span {
     height: 100%;
     border-radius: 18px;
 }
+.tablet,
+.mobile{
+    display: none;
+}
+
+/* Trainings and Exercises section */
+.trainings-text{
+    margin-top: 6.25rem;
+    margin-bottom: 3.6rem;
+}
+
