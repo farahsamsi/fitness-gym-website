@@ -50,21 +50,22 @@ footer {
     border: 1px solid white;
 }
 
-header{
+header {
     background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
 }
 
-img{
+img {
     width: 100%;
     object-fit: cover;
 }
 
-.section-title{
+.section-title {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: .8rem;
 }
-.section-description{
+
+.section-description {
     font-size: .8rem;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -144,7 +145,7 @@ span {
     width: 12rem;
 }
 
-.lower-card{
+.lower-card {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -164,7 +165,8 @@ span {
     backdrop-filter: blur(10px);
 }
 
-.upper-card h2, .lower-card h2 {
+.upper-card h2,
+.lower-card h2 {
     font-size: 2.5rem;
     margin: 0;
 }
@@ -174,7 +176,7 @@ span {
     margin: 0.4rem 0 0 0;
 }
 
-.red-circle{
+.red-circle {
     background-color: rgb(230, 83, 60);
     width: 2.5rem;
     height: 2.5rem;
@@ -183,28 +185,64 @@ span {
 
 
 /* habits section related styles */
-.habits-container{
+.habits-container {
     text-align: center;
 }
-.habit-card-container{
+
+.habit-card-container {
     margin-top: 3.5rem;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2.5rem;
 }
 
-.card-container{
+.card-container {
     text-align: center;
 }
+
 .card-container>p {
-   padding: 2px 5px;
+    padding: 2px 5px;
 }
-.card-container .img-container{
+
+.card-container .img-container {
     border-radius: 50%;
     margin: 0 .9rem 1.8rem .9rem;
     display: flex;
     border: 5px solid rgba(255, 255, 255, 0.205);
 }
-.card-container .img-container img{
+
+.card-container .img-container img {
     border-radius: 50%;
+}
+
+
+/* extra mile section related styles */
+.extra-container {
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    padding: 1.8rem;
+}
+
+.extra-text-container,
+.extra-img-container {
+    width: 40%;
+}
+
+.extra-text-container {
+    margin-left: 2rem;
+}
+
+.extra-text-container p {
+    margin-bottom: 2.125rem;
+    line-height: 24px;
+}
+
+
+.extra-img-container img {
+    height: 100%;
+    border-radius: 18px;
 }
