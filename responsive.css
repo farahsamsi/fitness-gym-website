@@ -1,8 +1,11 @@
 /* responsive for mobile devices */
 @media screen and (max-width:576px) {
-    main, .footer-container{
+
+    main,
+    .footer-container {
         padding: 1.25rem;
     }
+
     .nav-options {
         display: none;
     }
@@ -92,37 +95,68 @@
     }
 
     .child-3,
-    .child-6{
+    .child-6 {
         display: none;
     }
+
     .child-1 {
         grid-column: 1/span 5;
         grid-row: 1/span 6;
     }
+
     .child-2 {
         grid-column: 6/span 7;
         grid-row: 1/span 6;
     }
+
     .child-4 {
         grid-column: 1/span 7;
         grid-row: 7/span 6;
     }
+
     .child-5 {
         grid-column: 8/span 5;
         grid-row: 7/span 6;
     }
 
-    .team-imgs-container{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(6,1fr);
+    .team-imgs-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
     }
-    .footer-parent-container{
+
+    .footer-parent-container {
         flex-direction: column;
         gap: 2rem;
         padding: 0 0 0 0;
     }
-    .footer-child-1, .footer-child-2, .footer-child-3 {
+
+    .footer-child-1,
+    .footer-child-2,
+    .footer-child-3 {
         width: 100%;
+    }
+
+    .calculator-parent {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .calculator-table{
+        width: 90%;
+    }
+     .calculator-form{
+        width: 100%;
+        gap: 34px;
+     }
+     .calculator-form .primary-btn{
+        padding: 1rem 3rem;
+     }
+
+     .form-inputs{
+        gap: .3rem;
+     }
+     .bmi-calculator-text{
+        margin-left: 0px;
     }
 }
 
@@ -130,9 +164,12 @@
 
 /* responsive for tablet devices */
 @media screen and (min-width:577px) and (max-width:992px) {
-    main, .footer-container{
+
+    main,
+    .footer-container {
         padding: 1.25rem;
     }
+
     .nav-options {
         gap: 1rem;
     }
@@ -169,16 +206,36 @@
         display: block;
     }
 
-    .footer-parent-container{
+    .footer-parent-container {
         flex-wrap: wrap;
         justify-content: flex-start;
         gap: 2rem;
         padding: 0 0 0 0;
     }
+
     .footer-child-1 {
         width: 60%;
     }
-    .footer-child-2, .footer-child-3{
+
+    .footer-child-2,
+    .footer-child-3 {
         width: 40%;
+    }
+
+    .calculator-parent {
+        flex-direction: column;
+        gap: 6rem;
+    }
+
+    .calculator-table{
+        width: 70%;
+    }
+     .calculator-form{
+        width: 100%;
+        gap: 34px;
+     }
+
+     .bmi-calculator-text{
+        margin-left: 0;
     }
 }
