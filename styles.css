@@ -150,6 +150,7 @@ span {
 .hero-image-container {
     width: 60%;
     position: relative;
+    display: flex;
 }
 
 .upper-card {
